@@ -49,10 +49,12 @@ button {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background: #f0f0f0;
+
 }
 
 .ac-unit {
@@ -64,6 +66,9 @@ body {
   background: #fff;
 }
 
+
+
+
 .ac-display {
   width: 50px;
   height: 30px;
@@ -71,6 +76,9 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
+  align-items: center;
+display: flex;
+justify-content: center;
 }
 
 .ac-line {
@@ -114,8 +122,29 @@ body {
   border-radius: 2px;
 }
 
+.ac-text {
+  margin: 10px;
+}
+
+.control-unit {
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+ border: 5px solid #000;
+width: 100px;
+height: 200px;
+margin: 20px;
+padding: 5px;
+background-color: white;
+border-radius: 20px;
+
+}
 .controls {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   text-align: center;
 }
 
@@ -124,4 +153,15 @@ body {
   padding: 10px 20px;
   margin: 0 10px;
   cursor: pointer;
+ 
+}
+
+.control-temp {
+  width: 90px;
+height: 50px;
+  border: 2px solid #000;
+align-items: center;
+display: flex;
+justify-content: center;
+
 }
